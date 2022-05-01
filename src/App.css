@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -11,6 +11,27 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+main {
+  min-height: 100vh;
+}
+main .rs-content {
+  padding: 20px;
+  margin: 20px;
+  height: 100vh;
+}
+.rs-header {
+  padding: 20px;
+}
+main.rs-content {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+.navbar-brand {
+  padding: 18px 20px;
+  display: inline-block;
 }
 
 .App-header {
