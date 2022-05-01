@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/3ZO8TkijklK1VQ4c4NEP">
       Solution
     </a>
     <span> | </span>
@@ -37,7 +37,7 @@
 
 ## Overview
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
   - Demo is hosted on [Netlify](https://button-component-dev.netlify.app/)
@@ -53,14 +53,18 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
+1. Reusable Button Component
+2. Variants / Button Types for button styling and sizes
+3. Support for all html button attributes
+
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
+
 
 ## How To Use
 
@@ -89,5 +93,5 @@ $ npm start
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/Gameonn})
-- Twitter [@your-twitter](https://twitter.com/Ankit89Jindal)
+- GitHub [Gameonn](https://{github.com/Gameonn})
+- Twitter [Gameonn](https://twitter.com/Ankit89Jindal)
