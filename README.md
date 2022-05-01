@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Button Component</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://button-component-dev.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -37,14 +37,16 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
-
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  - Demo is hosted on [Netlify](https://button-component-dev.netlify.app/)
 - What was your experience?
+  - Good experience, helped to brush up css design and create a reusable button
 - What have you learned/improved?
+  - I learnt more about using children props, css modules in react
 - Your wisdom? :)
+  - Awesome challenge for implementing basics of react
 
 ### Built With
 
@@ -68,7 +70,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/Gameonn/react-button-component
 
 # Install dependencies
 $ npm install
@@ -87,6 +89,5 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@your-username](https://{github.com/Gameonn})
+- Twitter [@your-twitter](https://twitter.com/Ankit89Jindal)
