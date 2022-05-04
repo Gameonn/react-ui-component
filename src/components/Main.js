@@ -1,4 +1,5 @@
 import Button from "./Button";
+import ButtonType from "./ButtonType";
 import { FlexboxGrid, Divider } from "rsuite";
 
 let styleObj = {
@@ -6,30 +7,36 @@ let styleObj = {
   height: "40px"
 };
 
+const variantTypes = ["", "outline", "text"];
+const colorTypes = ["default", "primary", "danger", "secondary"];
+const sizeTypes = ["xs", "sm", "md", "lg"];
+const startIconTypes = ["home", "bookmarks", "bolt", "book"];
+const endIconTypes = ["toys", "whatshot", "weekend", "vignette"];
+
+const types = {
+  color: ["default", "primary", "danger", "secondary"],
+  size: ["xs", "sm", "md", "lg"],
+  variant: ["", "outline", "text"],
+  startIcon: ["home", "bookmarks", "bolt", "book"],
+  endIcon: ["toys", "whatshot", "weekend", "vignette"]
+};
+
 const Main = () => {
-  console.log("Main");
   return (
     <div>
       <h4>Buttons</h4> <br />
       <div className="show-grid">
-        <b> Normal </b>
-        <FlexboxGrid justify="space-around">
-          <FlexboxGrid.Item colspan={6}>
-            <small style={styleObj}> {`<Button />`} </small>
-            <Button />
-          </FlexboxGrid.Item>
-          <FlexboxGrid.Item colspan={6}>
-            <small style={styleObj}>{`<Button variant="outline" />`}</small>
-            <Button variant="outline" />
-          </FlexboxGrid.Item>
-          <FlexboxGrid.Item colspan={6}>
-            <small style={styleObj}> {`<Button variant="text" />`} </small>
-            <Button variant="text" />
-          </FlexboxGrid.Item>
-        </FlexboxGrid>
-
-        <Divider />
+        <ButtonType types={types} set="variant" title="Normal" />
+        <ButtonType types={types} set="color" title="Colors" />
+        <ButtonType types={types} set="size" title="Size" />
+        <ButtonType
+          types={startIconTypes}
+          set="startIcon"
+          title="Start Icons"
+        />
+        <ButtonType types={endIconTypes} set="endIcon" title="End Icons" />
         <b> Colors </b>
+
         <FlexboxGrid justify="space-around">
           <FlexboxGrid.Item colspan={4}>
             <small style={styleObj}> {`<Button color="default" />`} </small>
