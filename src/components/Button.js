@@ -22,11 +22,19 @@ const Button = ({
     ${styles[size]}`}
       disabled={disabled ? "disabled" : ""}
     >
-      {startIcon && <span className="material-icons">{startIcon}</span>}
+      {startIcon && (
+        <span className="material-icons" style={{ verticalAlign: "middle" }}>
+          {startIcon}
+        </span>
+      )}
       {/* {variant && <span className={styles["caps"]}> {variant}</span>}
       {color && <span className={styles["caps"]}> {color}</span>}  */}
       <span className={styles["caps"]}> Default </span>
-      {endIcon && <span className="material-icons">{endIcon}</span>}
+      {endIcon && (
+        <span className="material-icons" style={{ verticalAlign: "middle" }}>
+          {endIcon}
+        </span>
+      )}
     </button>
   );
 };
