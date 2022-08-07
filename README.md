@@ -54,6 +54,7 @@ Try to tell visitors a story about your project by answering:
 
 - [React](https://reactjs.org/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- Material Icons
 
 ## Features
 
