@@ -48,6 +48,10 @@ Try to tell visitors a story about your project by answering:
 - Your wisdom? :)
   - Awesome challenge for implementing basics of react
 
+### Preview
+<img src="https://user-images.githubusercontent.com/6601996/184472147-e3797312-25a7-43c7-8600-ea545a78bd3e.png" />
+
+
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
