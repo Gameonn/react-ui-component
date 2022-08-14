@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Preview](#built-with)
+- [Preview](#preview)
 - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
