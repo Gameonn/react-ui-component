@@ -5,7 +5,6 @@ import Dropdown from "rsuite/Dropdown";
 import "rsuite/dist/rsuite.min.css";
 
 const Sidebar = () => {
-  console.log("Sidebar");
   return (
     <div style={{ display: "block", width: 300, paddingLeft: 30 }}>
       <Sidenav defaultOpenKeys={["3", "4"]}>
