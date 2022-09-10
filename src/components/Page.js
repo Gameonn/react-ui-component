@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Main from "./Main";
+import Buttons from "./Button/Buttons";
 import {
   Sidenav,
   Nav,
@@ -8,7 +8,7 @@ import {
   Container,
   Sidebar,
   // Header,
-  Content
+  Content,
 } from "rsuite";
 import {
   ArrowRightLine as AngleRight,
@@ -19,7 +19,7 @@ import {
   Rate,
   AdvancedAnalytics as LogoAnalytics,
   Dashboard,
-  Grid
+  Grid,
 } from "@rsuite/icons";
 import "rsuite/dist/rsuite.min.css";
 
@@ -30,7 +30,7 @@ const headerStyles = {
   background: "#34c3ff",
   color: " #fff",
   whiteSpace: "nowrap",
-  overflow: "hidden"
+  overflow: "hidden",
 };
 
 const NavToggle = ({ expand, onChange }) => {
@@ -61,7 +61,7 @@ const Page = () => {
         <Sidebar
           style={{
             boxShadow: "0 4px 4px rgb(0 0 0 / 12%), 0 0 10px rgb(0 0 0 / 6%)",
-            background: "#f2f2f5"
+            background: "#f2f2f5",
           }}
           width={expand ? 260 : 56}
           collapsible
@@ -112,10 +112,9 @@ const Page = () => {
           </Sidenav>
           <NavToggle expand={expand} onChange={() => setExpand(!expand)} />
         </Sidebar>
-
         <Container>
           <Content>
-            <Main />
+            <Buttons />
           </Content>
         </Container>
       </Container>

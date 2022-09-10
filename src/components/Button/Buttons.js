@@ -1,19 +1,14 @@
-import Button from "./Button/Button";
+import Button from "./Button";
 import { FlexboxGrid, Divider, Col } from "rsuite";
 import { nanoid } from "nanoid";
 
-let styleObj = {
-  display: "block",
-  height: "40px",
-  marginTop: "10px",
-};
 const variantTypes = ["normal", "outline", "bold", "text"];
 const colorTypes = ["default", "primary", "danger", "warning"];
 const sizeTypes = ["xs", "sm", "md", "lg"];
 const startIconTypes = ["home", "bookmarks", "bolt", "book"];
 const endIconTypes = ["toys", "whatshot", "weekend", "vignette"];
 
-const Main = () => {
+const Buttons = () => {
   return (
     <div>
       <h4 className="heading">BUTTONS</h4> <br />
@@ -28,7 +23,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}> {`<Button variant="${type}" />`} </small>
+              <small> {`<Button variant="${type}" />`} </small>
               <Button variant={type} />
             </FlexboxGrid.Item>
           ))}
@@ -45,7 +40,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}> {`<Button color="${type}" />`} </small>
+              <small> {`<Button color="${type}" />`} </small>
               <Button color={type} />
             </FlexboxGrid.Item>
           ))}
@@ -61,7 +56,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}> {`<Button size="${type}" />`} </small>
+              <small> {`<Button size="${type}" />`} </small>
               <Button size={type} />
             </FlexboxGrid.Item>
           ))}
@@ -77,7 +72,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
+              <small>
                 {`<Button startIcon="${type}" color="${colorTypes[i]}" />`}
               </small>
               <Button startIcon={type} color={colorTypes[i]} />
@@ -95,7 +90,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
+              <small>
                 {`<Button endIcon="${type}" color="${colorTypes[i]}" />`}
               </small>
               <Button endIcon={type} color={colorTypes[i]} />
@@ -113,9 +108,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
-                {`<Button variant="outline" color="${type}" />`}
-              </small>
+              <small>{`<Button variant="outline" color="${type}" />`}</small>
               <Button color={type} variant="outline" />
             </FlexboxGrid.Item>
           ))}
@@ -131,9 +124,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
-                {`<Button variant="text" color="${type}" />`}
-              </small>
+              <small>{`<Button variant="text" color="${type}" />`}</small>
               <Button color={type} variant="text" />
             </FlexboxGrid.Item>
           ))}
@@ -149,9 +140,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
-                {`<Button variant="bold" color="${type}" />`}
-              </small>
+              <small>{`<Button variant="bold" color="${type}" />`}</small>
               <Button color={type} variant="bold" />
             </FlexboxGrid.Item>
           ))}
@@ -167,9 +156,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
-                {`<Button disabled color="${type}" />`}
-              </small>
+              <small>{`<Button disabled color="${type}" />`}</small>
               <Button color={type} disabled />
             </FlexboxGrid.Item>
           ))}
@@ -185,7 +172,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
+              <small>
                 {`<Button disabled variant="text" color="${type}" />`}
               </small>
               <Button color={type} variant="text" disabled />
@@ -203,9 +190,7 @@ const Main = () => {
               xs={12}
               key={nanoid()}
             >
-              <small style={styleObj}>
-                {`<Button disableShadow color="${type}" />`}
-              </small>
+              <small>{`<Button disableShadow color="${type}" />`}</small>
               <Button color={type} disableShadow />
             </FlexboxGrid.Item>
           ))}
@@ -216,4 +201,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Buttons;
