@@ -1,9 +1,7 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Button Component</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank"> Devchallenges.io </a>.
 </div>
 
 <div align="center">
@@ -27,7 +25,8 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Preview](#preview)
+- [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
@@ -48,12 +47,17 @@ Try to tell visitors a story about your project by answering:
 - Your wisdom? :)
   - Awesome challenge for implementing basics of react
 
+### Preview
+<img src="https://user-images.githubusercontent.com/6601996/184472147-e3797312-25a7-43c7-8600-ea545a78bd3e.png" />
+
+
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- Material Icons
 
 ## Features
 
