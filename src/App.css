@@ -1,7 +1,9 @@
 .App {
   /* text-align: center; */
 }
-
+* {
+  font-family: sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -33,7 +35,17 @@ main.rs-content {
   padding: 18px 20px;
   display: inline-block;
 }
-
+.heading {
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 3px #ddd;
+  box-shadow: 1px 6px 10px #eee;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+}
+.show-grid b {
+  letter-spacing: 1px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -55,5 +67,13 @@ main.rs-content {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (max-width: 600px) {
+  .rs-sidebar-collapse {
+    flex: 0 0 56px !important;
+    width: 56px !important;
+    overflow: hidden;
+    position: fixed;
   }
 }

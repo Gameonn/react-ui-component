@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./Button/Button";
 import { FlexboxGrid, Divider, Col } from "rsuite";
 import { nanoid } from "nanoid";
 
@@ -16,7 +16,7 @@ const endIconTypes = ["toys", "whatshot", "weekend", "vignette"];
 const Main = () => {
   return (
     <div>
-      <h4>Buttons</h4> <br />
+      <h4 className="heading">BUTTONS</h4> <br />
       <div className="show-grid" style={{ textAlign: "center" }}>
         <b> Normal </b>
         <FlexboxGrid justify="space-around">
