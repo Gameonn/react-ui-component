@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Buttons from "./Button/Buttons";
+import Inputs from "./Input/Inputs";
 import {
   Sidenav,
   Nav,
@@ -7,7 +8,6 @@ import {
   Navbar,
   Container,
   Sidebar,
-  // Header,
   Content,
 } from "rsuite";
 import {
@@ -22,6 +22,7 @@ import {
   Grid,
 } from "@rsuite/icons";
 import "rsuite/dist/rsuite.min.css";
+import { NavLink, useParams } from "react-router-dom";
 
 const headerStyles = {
   padding: 18,
@@ -54,6 +55,7 @@ const NavToggle = ({ expand, onChange }) => {
 };
 
 const Page = () => {
+  const { page } = useParams();
   const [expand, setExpand] = useState(true);
   return (
     <div className="show-fake-browser sidebar-page">
@@ -74,11 +76,7 @@ const Page = () => {
               </span>
             </div>
           </Sidenav.Header>
-          <Sidenav
-            expanded={expand}
-            defaultOpenKeys={["3"]}
-            appearance="subtle"
-          >
+          <Sidenav expanded={expand} appearance="subtle">
             <Sidenav.Body>
               <Nav>
                 <Nav.Item eventKey="1" icon={<Dashboard />}>
@@ -90,11 +88,25 @@ const Page = () => {
                 <Nav.Item eventKey="4" icon={<SiteFill />}>
                   Spaces
                 </Nav.Item>
-                <Nav.Item eventKey="5" active icon={<Rate />}>
-                  Buttons
+                <Nav.Item eventKey="5" icon={<Rate />}>
+                  <NavLink
+                    to="/page/button"
+                    style={({ isActive }) => ({
+                      color: isActive ? "#1675e0" : "#8e8e93",
+                    })}
+                  >
+                    Buttons
+                  </NavLink>
                 </Nav.Item>
                 <Nav.Item eventKey="6" icon={<Code />}>
-                  Inputs
+                  <NavLink
+                    to="/page/input"
+                    style={({ isActive }) => ({
+                      color: isActive ? "#1675e0" : "#8e8e93",
+                    })}
+                  >
+                    Inputs
+                  </NavLink>
                 </Nav.Item>
                 <Dropdown
                   eventKey="3"
@@ -114,7 +126,8 @@ const Page = () => {
         </Sidebar>
         <Container>
           <Content>
-            <Buttons />
+            {page === "input" && <Inputs />}
+            {page === "button" && <Buttons />}
           </Content>
         </Container>
       </Container>
