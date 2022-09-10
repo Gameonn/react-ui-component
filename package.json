@@ -10,6 +10,7 @@
     "nanoid": "^3.3.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "rsuite": "^5.8.1",
     "web-vitals": "^2.1.4"
