@@ -4,21 +4,15 @@ import { FlexboxGrid, Divider } from "rsuite";
 
 let styleObj = {
   display: "block",
-  height: "40px"
+  height: "40px",
 };
-
-const variantTypes = ["", "outline", "text"];
-const colorTypes = ["default", "primary", "danger", "secondary"];
-const sizeTypes = ["xs", "sm", "md", "lg"];
-const startIconTypes = ["home", "bookmarks", "bolt", "book"];
-const endIconTypes = ["toys", "whatshot", "weekend", "vignette"];
 
 const types = {
   color: ["default", "primary", "danger", "secondary"],
   size: ["xs", "sm", "md", "lg"],
   variant: ["", "outline", "bold", "text"],
   startIcon: ["home", "bookmarks", "bolt", "book"],
-  endIcon: ["toys", "whatshot", "weekend", "vignette"]
+  endIcon: ["toys", "whatshot", "weekend", "vignette"],
 };
 
 const Main = () => {
