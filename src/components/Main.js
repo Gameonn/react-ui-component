@@ -1,5 +1,5 @@
-import Button from "./Button";
-import ButtonType from "./ButtonType";
+import Button from "./Button/Button";
+import ButtonType from "./Button/ButtonType";
 import { FlexboxGrid, Divider } from "rsuite";
 
 let styleObj = {
@@ -16,7 +16,7 @@ const endIconTypes = ["toys", "whatshot", "weekend", "vignette"];
 const types = {
   color: ["default", "primary", "danger", "secondary"],
   size: ["xs", "sm", "md", "lg"],
-  variant: ["", "outline", "text"],
+  variant: ["", "outline", "bold", "text"],
   startIcon: ["home", "bookmarks", "bolt", "book"],
   endIcon: ["toys", "whatshot", "weekend", "vignette"]
 };
@@ -29,12 +29,8 @@ const Main = () => {
         <ButtonType types={types} set="variant" title="Normal" />
         <ButtonType types={types} set="color" title="Colors" />
         <ButtonType types={types} set="size" title="Size" />
-        <ButtonType
-          types={startIconTypes}
-          set="startIcon"
-          title="Start Icons"
-        />
-        <ButtonType types={endIconTypes} set="endIcon" title="End Icons" />
+        <ButtonType types={types} set="startIcon" title="Start Icons" />
+        <ButtonType types={types} set="endIcon" title="End Icons" />
         <b> Colors </b>
 
         <FlexboxGrid justify="space-around">
