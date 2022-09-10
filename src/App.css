@@ -4,6 +4,11 @@
 * {
   font-family: sans-serif;
 }
+a:link,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -31,6 +36,9 @@ main.rs-content {
   margin: 20px;
   padding: 20px;
 }
+.rs-sidenav-item a {
+  display: block;
+}
 .navbar-brand {
   padding: 18px 20px;
   display: inline-block;
@@ -42,6 +50,11 @@ main.rs-content {
   display: block;
   padding: 10px 20px;
   text-align: center;
+}
+.show-grid small {
+  display: block;
+  height: 40px;
+  margin-top: 10px;
 }
 .show-grid b {
   letter-spacing: 1px;
@@ -75,5 +88,6 @@ main.rs-content {
     width: 56px !important;
     overflow: hidden;
     position: fixed;
+    height: 100%;
   }
 }
