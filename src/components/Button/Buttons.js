@@ -100,7 +100,7 @@ const Buttons = () => {
         <Divider />
         <b>Outline colors</b>
         <FlexboxGrid justify="space-around">
-          {colorTypes.map((type, i) => (
+          {colorTypes.map((type) => (
             <FlexboxGrid.Item
               as={Col}
               colspan={24}
@@ -116,7 +116,7 @@ const Buttons = () => {
         <Divider />
         <b>Text colors</b>
         <FlexboxGrid justify="space-around">
-          {colorTypes.map((type, i) => (
+          {colorTypes.map((type) => (
             <FlexboxGrid.Item
               as={Col}
               colspan={24}
@@ -132,7 +132,7 @@ const Buttons = () => {
         <Divider />
         <b>Bold colors</b>
         <FlexboxGrid justify="space-around">
-          {colorTypes.map((type, i) => (
+          {colorTypes.map((type) => (
             <FlexboxGrid.Item
               as={Col}
               colspan={24}
@@ -148,7 +148,7 @@ const Buttons = () => {
         <Divider />
         <b>Disabled</b>
         <FlexboxGrid justify="space-around">
-          {colorTypes.map((type, i) => (
+          {colorTypes.map((type) => (
             <FlexboxGrid.Item
               as={Col}
               colspan={24}
@@ -164,7 +164,7 @@ const Buttons = () => {
         <Divider />
         <b>Text Disabled</b>
         <FlexboxGrid justify="space-around">
-          {colorTypes.map((type, i) => (
+          {colorTypes.map((type) => (
             <FlexboxGrid.Item
               as={Col}
               colspan={24}
@@ -182,7 +182,7 @@ const Buttons = () => {
         <Divider />
         <b>Disable Shadow</b>
         <FlexboxGrid justify="space-around">
-          {colorTypes.map((type, i) => (
+          {colorTypes.map((type) => (
             <FlexboxGrid.Item
               as={Col}
               colspan={24}
