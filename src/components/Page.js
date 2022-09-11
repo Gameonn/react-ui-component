@@ -13,7 +13,6 @@ import {
 import {
   ArrowRightLine as AngleRight,
   Code,
-  SiteFill,
   ArrowLeftLine as AngleLeft,
   Peoples as Group,
   Rate,
@@ -55,8 +54,10 @@ const NavToggle = ({ expand, onChange }) => {
 };
 
 const Page = () => {
+  console.log("page component");
   const { page } = useParams();
   const [expand, setExpand] = useState(true);
+  const content = page === "button" ? <Buttons /> : <Inputs />;
   return (
     <div className="show-fake-browser sidebar-page">
       <Container>
@@ -79,16 +80,13 @@ const Page = () => {
           <Sidenav expanded={expand} appearance="subtle">
             <Sidenav.Body>
               <Nav>
-                <Nav.Item eventKey="1" icon={<Dashboard />}>
+                <Nav.Item eventKey="1" title="Colors" icon={<Dashboard />}>
                   Colors
                 </Nav.Item>
-                <Nav.Item eventKey="2" icon={<Group />}>
+                <Nav.Item eventKey="2" title="Typography" icon={<Group />}>
                   Typography
                 </Nav.Item>
-                <Nav.Item eventKey="4" icon={<SiteFill />}>
-                  Spaces
-                </Nav.Item>
-                <Nav.Item eventKey="5" icon={<Rate />}>
+                <Nav.Item eventKey="5" title="Buttons" icon={<Rate />}>
                   <NavLink
                     to="/page/button"
                     style={({ isActive }) => ({
@@ -98,7 +96,7 @@ const Page = () => {
                     Buttons
                   </NavLink>
                 </Nav.Item>
-                <Nav.Item eventKey="6" icon={<Code />}>
+                <Nav.Item eventKey="6" title="Inputs" icon={<Code />}>
                   <NavLink
                     to="/page/input"
                     style={({ isActive }) => ({
@@ -125,10 +123,7 @@ const Page = () => {
           <NavToggle expand={expand} onChange={() => setExpand(!expand)} />
         </Sidebar>
         <Container>
-          <Content>
-            {page === "input" && <Inputs />}
-            {page === "button" && <Buttons />}
-          </Content>
+          <Content>{content}</Content>
         </Container>
       </Container>
     </div>
