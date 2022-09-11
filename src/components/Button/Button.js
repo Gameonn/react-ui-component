@@ -2,15 +2,12 @@ import styles from "./Button.module.css";
 
 const Button = ({
   variant,
-  text,
   disableShadow,
-  states,
   disabled,
   size,
   color,
   startIcon,
   endIcon,
-  children
 }) => {
   return (
     <button
@@ -27,8 +24,6 @@ const Button = ({
           {startIcon}
         </span>
       )}
-      {/* {variant && <span className={styles["caps"]}> {variant}</span>}
-      {color && <span className={styles["caps"]}> {color}</span>}  */}
       <span className={styles["caps"]}> Default </span>
       {endIcon && (
         <span className="material-icons" style={{ verticalAlign: "middle" }}>
