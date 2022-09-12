@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://button-component-dev.netlify.app/">
+    <a href="https://ui-component-dev.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -39,7 +39,7 @@
 Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
-  - Demo is hosted on [Netlify](https://button-component-dev.netlify.app/)
+  - Demo is hosted on [Netlify](https://ui-component-dev.netlify.app/)
 - What was your experience?
   - Good experience, helped to brush up css design and create a reusable button
 - What have you learned/improved?
@@ -63,9 +63,10 @@ Try to tell visitors a story about your project by answering:
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-1. Reusable Button Component
+1. Reusable Button and Input Component
 2. Variants / Button Types for button styling and sizes
-3. Support for all html button attributes
+3. Input Types based on different properties
+4. Support for all html button and input attributes
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
 
