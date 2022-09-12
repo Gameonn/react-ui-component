@@ -1,4 +1,4 @@
-<h1 align="center">Button Component</h1>
+<h1 align="center">UI Component</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank"> Devchallenges.io </a>.
