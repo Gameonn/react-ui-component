@@ -1,5 +1,5 @@
 import styles from "./Input.module.css";
-import classNames from "classnames";
+import cx from "classnames";
 
 const Input = (props) => {
   const {
@@ -10,25 +10,45 @@ const Input = (props) => {
     disabled,
     size,
     helperText,
-    // startIcon,
-    // endIcon,
+    multiline,
+    rows,
+    startIcon,
+    endIcon,
   } = props;
   console.log(props, "props");
+
+  if (multiline) {
+    return (
+      <>
+        <textarea rows={rows} placeholder="Placeholder" wrap="soft"></textarea>
+      </>
+    );
+  }
+
   return (
     <>
+      {startIcon && (
+        <span className="icons icons-start material-icons">{startIcon}</span>
+      )}
       <input
         placeholder="Placeholder"
-        className={`
-    ${disableShadow ? styles.disableShadow : undefined}
-    ${error ? styles.error : undefined}
-    ${fullWidth ? styles.fullWidth : undefined}
-    ${styles[size]}`}
+        className={cx(
+          styles["form-control"],
+          { [styles.disableShadow]: disableShadow },
+          { [styles.disabled]: disabled },
+          { [styles.error]: error },
+          { [styles["full-width"]]: fullWidth },
+          { [styles.size]: size }
+        )}
         disabled={disabled ? "disabled" : ""}
         autoFocus={focus ? "autofocus" : ""}
       />
+      {endIcon && (
+        <span className="icons icons-end material-icons">{endIcon}</span>
+      )}
       {helperText && (
         <small
-          className={classNames(`${styles["input-helper"]}`, { error: error })}
+          className={cx(styles["input-helper"], { [styles.error]: error })}
         >
           {helperText}
         </small>
