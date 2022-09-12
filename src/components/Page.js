@@ -122,7 +122,7 @@ const Page = () => {
           </Sidenav>
           <NavToggle expand={expand} onChange={() => setExpand(!expand)} />
         </Sidebar>
-        <Container>
+        <Container className="rs-inner-container">
           <Content>{content}</Content>
         </Container>
       </Container>
