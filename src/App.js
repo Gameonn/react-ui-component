@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Page from "./components/Page";
 import "./App.css";
@@ -10,7 +10,6 @@ const App = () => {
       <Routes>
         <Route path="/page/:page" exact element={<Page />} />
       </Routes>
-      <Page />
       <center>
         <strong>
           Created By: <a href="https://github.com/Gameonn">Gameonn</a>
