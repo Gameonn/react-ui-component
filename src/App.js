@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Page from "./components/Page";
 import "./App.css";
@@ -9,6 +9,7 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route path="/page/:page" exact element={<Page />} />
+        <Route path="/" element={<Navigate to="/page/button" replace />} />
       </Routes>
       <center>
         <strong>
