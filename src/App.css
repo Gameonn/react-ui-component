@@ -42,6 +42,7 @@ main.rs-content {
 .rs-flex-box-grid {
   align-items: start;
 }
+
 .navbar-brand {
   padding: 18px 20px;
   display: inline-block;
@@ -62,11 +63,24 @@ main.rs-content {
 .show-grid b {
   letter-spacing: 1px;
 }
-.error {
-  color: #d43f3a;
-}
 .App-link {
   color: #61dafb;
+}
+.icons {
+  position: absolute;
+  margin: 8px 5px;
+  font-size: 18px;
+}
+.icons + input {
+  padding-left: 25px;
+}
+.icons-start {
+  left: 3px;
+  bottom: 2%;
+}
+.icons-end {
+  right: 20%;
+  bottom: 2%;
 }
 
 @keyframes App-logo-spin {
@@ -84,5 +98,8 @@ main.rs-content {
     overflow: hidden;
     position: fixed;
     height: 100%;
+  }
+  .rs-inner-container {
+    margin-left: 40px;
   }
 }
