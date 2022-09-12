@@ -39,6 +39,9 @@ main.rs-content {
 .rs-sidenav-item a {
   display: block;
 }
+.rs-flex-box-grid {
+  align-items: start;
+}
 .navbar-brand {
   padding: 18px 20px;
   display: inline-block;
@@ -58,6 +61,9 @@ main.rs-content {
 }
 .show-grid b {
   letter-spacing: 1px;
+}
+.error {
+  color: #d43f3a;
 }
 .App-link {
   color: #61dafb;
