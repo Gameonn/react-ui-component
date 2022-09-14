@@ -41,7 +41,7 @@ Try to tell visitors a story about your project by answering:
 - Where can I see your demo?
   - Demo is hosted on [Netlify](https://ui-component-dev.netlify.app/)
 - What was your experience?
-  - Good experience, helped to brush up css design and create a reusable button
+  - Good experience, helped to brush up css design and create a reusable button and reusable input
 - What have you learned/improved?
   - I learnt more about using children props, css modules in react
 - Your wisdom? :)
