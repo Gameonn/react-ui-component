@@ -36,7 +36,7 @@
 
 ## Overview
 
-Try to tell visitors a story about your project by answering:
+UI component contains a variety of button and input components with different rendered versions.
 
 - Where can I see your demo?
   - Demo is hosted on [Netlify](https://ui-component-dev.netlify.app/)
