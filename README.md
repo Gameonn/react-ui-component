@@ -5,9 +5,7 @@
 </div>
 <div align="center">
   <h3>
-    <a href="https://ui-component-dev.netlify.app/">
-      Demo
-    </a>
+    <a href="https://ui-component-dev.netlify.app/"> Demo </a>
     <span> | </span>
     <a href="https://devchallenges.io/solutions/3ZO8TkijklK1VQ4c4NEP">
       Solution
