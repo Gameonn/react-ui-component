@@ -1,7 +1,7 @@
 <h1 align="center">UI Component</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank"><strong> Devchallenges.io </strong></a>.
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank"><strong> Devchallenges.io </strong></a>
 </div>
 <div align="center">
   <h3>
